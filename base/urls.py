@@ -1,7 +1,8 @@
 from django.urls import path
+from django.contrib.auth.views import LogoutView
 from .views import TaskList, TaskDetail, TaskCreate, TaskUpdate, DeleteView
 from .views import CustomLoginView
-from django.contrib.auth.views import LogoutView
+
 
 urlpatterns = [
     path('login/', CustomLoginView.as_view(), name='login'),
