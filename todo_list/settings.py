@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -84,9 +86,10 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse('postgres://fyocyvnapzryly:4c5a863a8a99da49c779ad6a0d5a9138140577ffc316645a5feff8a1771e8509@ec2-54-194-211-183.eu-west-1.compute.amazonaws.com:5432/da959h5k5jaus6')
-    
 }
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
