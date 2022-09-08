@@ -33,7 +33,7 @@ DEBUG = development
 if development:
     ALLOWED_HOSTS = ['localhost']
 else:
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME', 'todo-2326-app.herokuapp.com')]
+    ALLOWED_HOSTS = [os.environ.get('todo-2326-app.herokuapp.com')]
 
 # Application definition
 
