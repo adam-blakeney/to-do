@@ -83,10 +83,9 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 # }
 
 DATABASES = {
-    'default': {
-        'ENGINE': dj_database_url.parse('postgres://prdeumkcsxrmep:f95841cc9eab3429cb03587ac26bae8a81c5f0fce588996a7e74ca2916da6b3d@ec2-54-204-241-136.compute-1.amazonaws.com:5432/d8cs8c6ranjdce')
-    }
-
+    'default': dj_database_url.parse('postgres://fyocyvnapzryly:4c5a863a8a99da49c779ad6a0d5a9138140577ffc316645a5feff8a1771e8509@ec2-54-194-211-183.eu-west-1.compute.amazonaws.com:5432/da959h5k5jaus6')
+    
+}
 
 
 # Password validation
