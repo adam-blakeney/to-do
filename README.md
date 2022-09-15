@@ -58,17 +58,23 @@ The structure of the ToDo app is foccused on UX interface with a plain simple bu
 
 ## 1. Login
 This is the most important part of my code. This has to be clear and functioning perfect for the rest of the code to be useful. This is where the user discovers the ToDo app and its a first impression. They are met with the option to log back in or sign up as a new user. to gain the most amount of users it is important that at this point the app is represented well so it looks like an app worth signing up for.
-![Images]()
+![Images](images/login.png)
+
+__register__
+![Images](images/register.png)
 
 ## 2. Home
 This is the central point of the webapp. Here the user can, see their list, items in list, username logout option and ability to selet each task item. 
-![Images]()
+![Images](images/home.png)
 
 ## 3. Edit
 This is where the user can add the title to the task , add a description to it and make it complete or not.
 this is where the user input is taken.
 there is another page for deleting tasks whick ask the user for confirmation first.
+![Images](images/edit.png)
 
+__delete__
+![Images](images/delete.png)
 
 # **Technologies used**
 ## Websites
