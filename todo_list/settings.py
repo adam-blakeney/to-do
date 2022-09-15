@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://fyocyvnapzryly:4c5a863a8a99da49c779ad6a0d5a9138140577ffc316645a5feff8a1771e8509@ec2-54-194-211-183.eu-west-1.compute.amazonaws.com:5432/da959h5k5jaus6')
+    'default': dj_database_url.parse('postgres://wkbveymeprdozb:421f9f7ff89f4df73da617a00763934f02256a59a60b2b82cee653746113702a@ec2-54-220-255-121.eu-west-1.compute.amazonaws.com:5432/ddltqi4g59bahu')
 }
 
 
