@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://qjhypjwtweyzyf:a3a53f7cbc5f0b458cb91731cc11a262ac4bf82e907ed5e03cd4be8976c504b2@ec2-54-228-30-162.eu-west-1.compute.amazonaws.com:5432/da2klda6n1c3bd')
+    'default': dj_database_url.parse('postgres://qjhypjwtweyzyf:a3a53f7cbc5f0b458cb91731cc11a262ac4bf82e907ed5e03cd4be8976c504b2@ec2-54-228-30-162.eu-west-1.compute.amazonaws.com:5432/da2klda6n1c3bd')}
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
