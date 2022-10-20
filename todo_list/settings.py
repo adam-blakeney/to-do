@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rpl)8cb-3oyteo=(^^=@&2go^6#8ad^kk478-6(jyx$paarvhf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['todo-2326-app.herokuapp.com']
 
@@ -82,8 +82,7 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://wkbveymeprdozb:421f9f7ff89f4df73da617a00763934f02256a59a60b2b82cee653746113702a@ec2-54-220-255-121.eu-west-1.compute.amazonaws.com:5432/ddltqi4g59bahu')
-}
+    'default': dj_database_url.parse('postgres://qjhypjwtweyzyf:a3a53f7cbc5f0b458cb91731cc11a262ac4bf82e907ed5e03cd4be8976c504b2@ec2-54-228-30-162.eu-west-1.compute.amazonaws.com:5432/da2klda6n1c3bd')
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

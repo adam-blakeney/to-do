@@ -125,6 +125,7 @@ I need more assistance with this project than previous ones. but by the end i go
 
 Getting the pages to link up as they are required was difficult but by the end i got to understand it better, with the use of ({% extends 'base/main.html' %}
 {% block content %}) whcih is something new with django for me. This helped solve alot of issues.
+
 ## Improvements
 
 There are three things I identified during my project and on review that I was unable to do, for lack of knowledge that I would have liked to incorporate. I hope to learn how to do this to be able to incorporate in future projects.
