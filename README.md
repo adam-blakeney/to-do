@@ -26,7 +26,7 @@ The aims of this site is to give the user a qick and easy ability to add complet
 - [**Deployment**](#deployment)
   * [heroku deployment:](#heroku-deployment)
     * [Credit](#credit)
-
+- [**Resubmition Notes**](#resubmition-notes)
 
 
 # **UX**
@@ -166,4 +166,13 @@ youtube(https://www.youtube.com/c/programmingwithmosh)
 
 
 
+# **Resubmition Notes**
 
+On recevial of my first review i identified 2 main areas that caused need for resubmittion.
+The first being Debug set to true.
+This was a very easy fix and I have resolved it on the settings.py page adn set it to false and then tested the site again.
+Nest was the lack of agile documentation and path. so i have taken the time to retrace my steps and thought process from my note pad and place them on the githup issuse and milestone pages along with creating a AGILE.md document to show where i had used it and make it clear.
+I have also included there a description of my color themes for the site too.
+Through doing this my apprecation for agile has grown and i look to do agile in a different way moving forward.
+i have left the link to this document where you can find my updated agile and stories.
+[Here](AGILE.md)

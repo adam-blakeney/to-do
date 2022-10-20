@@ -17,38 +17,33 @@ The Kanban board was created using github projects and can be located [here](htt
 ### Kanban image
 
 Milestones
-The project had 7 main Milestones:
+The project had 5 main Milestones:
 
 - Milestone 1 - Base Setup
 
-The base setup Milestone is for all stories needed for the base set up of the application. Without the base setup, the app would not be possible, so it was the first epic to be delivered as all other features depend on the completion of the base setup.
+The base setup Milestone is for all stories needed for the base set up of the application. Without the base setup, the app would not be possible.
 
 - Milestone 2 - Standalone Pages
 
-The standalone pages Milestone is for small pages that did not have enough stories to warrant their own full epics. Instead of creating epics for tiny features, these small deliverables were all added under this epic.
+The standalone pages Milestone is for small pages that did not have enough stories to warrant their own full milstones. 
 
-- Milestone 3 - Authentication 
+- Milestone 3 - Profile 
 
-The authentication Milestone is for all stories related to the registration, login and authorization of views. This epic provides critical functionality and value as without it the users won’t be able to see the blog posts, post or register to the website.
+The Profile Milestone is for all stories related to the registration and login.
 
-- Milestone 4 – Subscribe to our newsletter
+User with an account can view add and edit tasks.
 
-User with an account can subscribe to the website newsletter and they can be updated at all times with everything happening around the company from updates on the website to future events happening where they can attend and have a good time. 
 
-- Milestone 5 – Get in touch with us
+- Milestone 4 - Deployment 
 
-The get in touch with us button located in the first page has been created to offer users the possibility to get in touch with the management ASAP. The users can use this button If they are new visitors of this website / users with an account. Once the form has been completed and the send button was clicked, an email will be received by the Finesse managment which will be dealing with the enquire further. 
+This Milestone is for all stories related to deploying the app to heroku so that the site is live for users.
 
-- Milestone 6 - Deployment 
-
-This Milestone is for all stories related to deploying the app to heroku so that the site is live for staff and customer use.
-
-- Milestone 7 - Documentation
+- Milestone 5 - Documentation
 
 This Milestone is for all document related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explaining all stages of development and necessary information on running, deploying and using the application.
 
 User Stories
-The following user stories (by epic) were completed:
+The following user stories were completed:
 
 - Milestone 1 - Base Setup
 
@@ -58,44 +53,28 @@ As a developer, I need to create static resources so that images, CSS and JavaSc
 
 As a developer, I need to set up the project so that it is ready for implementing the core features.
 
-As a developer, I need to create the footer with social media links and contact information.
-
-As a developer, I need to create the navbar so that users can navigate the website from any device.
+As a developer, I need to create the site template so that users can navigate the website from any device.
 
 - Milestone 2 - Standalone Pages
 
 As a developer, I need to implement a 404-error page to alert users when they have accessed a page that doesn't exist
 
-As a developer, I need to implement a 500-error page to alert users when an internal server error occurs
+As a developer, I would like a home page so that customers can view all tasks they have created.
 
-As a developer, I need to implement a 403-error page to redirect unauthorised users to so that I can secure my views
-
-As an Event Management online platform owner, I would like a home page so that customers can view information about the Finesse website. 
-
-- Milestone 3 - Authentication Epic
+- Milestone 3 - Profile
 
 As a developer, I need to implement allauth so that users can sign up and have access to the website’s features.
 
 As a site owner, I would like the allauth pages customized to that they fit in with the sites styling
 
-- Milestone 4 – Subscribe to our newsletter
 
-As a site owner, I would like to keep all the website users informed with everything happening around the company such as future events.
-As a developer I want to provide an easy way for my users to subscribe to the newsletters and limit the users to use the subscribe button just one time with an email address. This function has been implemented in order to prevent users from supra solicitate the system with the same email address more then once. 
-
-- Milestone 5 – Get in touch with us
-
-As a developer I want to allow users to be able to get in touch with the site owners via email.
-As a site owner I want users to complete a form and be able to detail what type of events they are looking for and receive an email with their inquiries. 
-As a site user I want to be able to get in touch with the site owners asap and therefore completing the form will be very easy. 
-
-- Milestone 6 - Deployment Epic
+- Milestone 4 - Deployment 
 
 As a developer, I need to set up white noise so that my static files are served in deployment
 
 As a developer, I need to deploy the project to heroku so that it is live for customers
 
-- Milestone 7 - Documentation
+- Milestone 5 - Documentation
 
 Also, after this has been completed, I have decided to add a profile section where users can add, or edit their profile, and alow them and other users to preview their profile. 
 
@@ -109,18 +88,52 @@ Complete testing documentation write up.
 # Testing 
 - Test 1
 
+Ensure a user can Sign in/out.
+
+Steps:
+
+If the users are logged into its account and they prefer to sign out, the user can select 'Logout' on the navbar.
+After clicking 'Logout', the users will be redirected to a page where they will be returned to login screen.
+Expected:
+
+User is logged out and back to the home page.
+
+Actual:
+
+User is logged out and back to the home page.
+
+- Test 2
+Ensure a user can sign up to the website.
+
+Steps:
+
+Navigate to Finesse home page, and click on 'Register'.
+Enter , username and password.
+Click Sign Up.
+Expected:
+
+After filing up the required fields, and clicking on the 'Register' button, if the information is valid they will be brought to the home page logged into the account.
+Actual:
+
+After filing up the required fields, and clicking on the 'Register' button, if the information is valid they will be brought to the home page logged into the account.
 
 
-Errors during deployment.
+# Errors during deployment.
 
 During deployment I have encounter some errors. Firstly the static files wasan't loading. Secondly the debug buton has been changed from os.environ('DEVELOPMENT') to True, to be able to see where the errors are coming from. After that, the debug button has been changed back into False, trying to check again if the deployment works, and after came back to os.environ('DEVELOPMENT').
 
 
-Database-Design
+# Database-Design
 
-The database was designed to allow CRUD functionality to be available to registered users when signed in. The user model is at the heart of the application as it is connected the blog side and linked by primary/foreign key relationships many to many and so on.
+The database was designed to allow CRUD functionality to be available to registered users when signed in. The user model is at the heart of the application as it is connected the blog side and linked by primary/foreign key relationships many to many.
 
-Security
+
+# Design
+I used a very bright vibrant color palette for this project. It is a highlighter style. I chose this as i used very slim lines in my project so this is to add depth to it and make it easier to see areas of importance to the user.
+![Images](images/color.png)
+i also liked the very minimalistic design as it is a daily app i dont want it cluttered or too much to work with it keeps it easy and fresh.
+
+# Security
 
 Environment variables were stored in an env.py for local development and for security purposes to ensure no secret keys, api keys or sensitive information was added the repository. In production, these variables were added to the heroku config vars within the project.
 
